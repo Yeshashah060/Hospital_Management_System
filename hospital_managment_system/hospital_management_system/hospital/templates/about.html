@@ -1,0 +1,10 @@
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+
+{% block content %}
+   <center><h1>About us</h1></center>
+   <div style="font-size:40px;font-color:blue;font-weight:bold;">Who are we and what we do</div>
+   {% load static %}
+      <img src="{% static 'io.jpg' %}" height=300px width=1500px alt="image">
+{% endblock content %}
+{% include 'footer.html' %}

@@ -1,0 +1,15 @@
+<html>
+<body>
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+
+{% block content %}
+
+    <h1 class="text-center">Welcome to hospital management system</h1>
+    {% load static %}
+    <img src="{% static 'logo.jpg' %}" height=300px width=1500px alt="image">
+
+{% endblock content %}
+{% include 'footer.html' %}
+</body>
+</html>
